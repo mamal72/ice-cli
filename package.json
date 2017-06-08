@@ -1,6 +1,6 @@
 {
   "name": "ice-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Iranian Calendar Events CLI package",
   "main": "app.js",
   "bin": {
