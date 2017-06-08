@@ -1,0 +1,41 @@
+{
+  "name": "ice-cli",
+  "version": "1.0.2",
+  "description": "Iranian Calendar Events CLI package",
+  "main": "app.js",
+  "bin": {
+    "ice-cli": "app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamal72/ice-cli.git"
+  },
+  "keywords": [
+    "iran",
+    "calendar",
+    "jalali",
+    "persian",
+    "cli"
+  ],
+  "author": "Mohamad Jahani <m4m4lj@gmail.com> (https://github.com/mamal72)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mamal72/ice-cli/issues"
+  },
+  "homepage": "https://github.com/mamal72/ice-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "iranian-calendar-events": "^0.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  }
+}
