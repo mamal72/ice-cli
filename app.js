@@ -8,21 +8,14 @@ const prettyPrint = data => JSON.stringify(data, null, 4);
 
 program
   .version(version)
-  .arguments('<year> [month]')
-  .action(async (y, m) => {
+  .arguments('<year> [month] [day]')
+  .action(async (y, m, d) => {
     // convert year and month to int
     const year = parseInt(y, 10);
     const month = parseInt(m, 10);
+    const day = parseInt(d, 10);
     // final events output
-    let events = [];
-    // year or month events
-    if (!month) {
-      // year events
-      events = await ice({ year });
-    } else {
-      // month events
-      events = await ice({ year, month });
-    }
+    const events = await ice({ year, month, day });
     // pretty print events
     return console.log(prettyPrint(events));
   })
